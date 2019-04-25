@@ -25,11 +25,11 @@ function Q3() {
         console.log('você é: ' + profissao);
         console.log('e é um substantivo feminino')
     }
-    else if (profissao=='Ator'||profissao=='Professor'||profissao=='Presidente') {
+    else if (profissao=='Ator'||profissao=='Professor') {
         console.log('você é: ' + profissao);
         console.log('e é um substantivo masculino')
     }
-    else if (profissao=='Musicista') {
+    else if (profissao=='Musicista' || profissao=='Presidente') {
         console.log('você é: ' + profissao);
         console.log('e é um substantivo dos dois gêneros')
     }
@@ -63,5 +63,30 @@ function Q4() {
     }
     else {
         console.log('insira apenas dois valores, para receber o terceiro')
+    }
+}
+
+function Q5() {
+    console.log('Q5');
+    var altura = Number.parseFloat(document.getElementById('altura').value);
+    var peso = Number.parseFloat(document.getElementById('peso').value);
+    var aux = document.getElementById('sexo');
+    var sexo = aux.options[aux.selectedIndex].value;
+    var imc = (peso/(altura*altura))
+    var letra = (sexo=='masculino') ? 'o' : 'a';
+    console.log('sua altura é: ' + altura);
+    console.log('seu peso é: ' + peso);
+    console.log('seu imc é: ' + (imc));
+    if (imc<18.5) {
+        console.log('você está magr' + letra);
+    }
+    else if (imc<24.9) {
+        console.log('você está sarad' + letra);
+    }
+    else if (imc<29.9) {
+        console.log('você está rechonchud' + letra);
+    }
+    else {
+        console.log('você está obes' + letra);
     }
 }
