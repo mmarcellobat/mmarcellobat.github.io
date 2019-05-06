@@ -53,10 +53,10 @@ function Q4() {
     var b = Number.parseInt(document.getElementById('b').value);
     var c = Number.parseInt(document.getElementById('c').value);
     if (!b&&a&&c){
-        console.log('o cateto oposto é ' + ((Math.pow(a,2))-(Math.pow(c,2))));
+        console.log('o cateto oposto é ' + (Math.sqrt((Math.pow(a,2))-(Math.pow(c,2)))));
     }
     else if (!c&&a&&b){
-        console.log('o cateto adjacente é ' + ((Math.pow(a,2))-(Math.pow(b,2))));
+        console.log('o cateto adjacente é ' + (Math.sqrt((Math.pow(a,2))-(Math.pow(c,2)))));
     }
     else if (!a&&c&&b){
         console.log('a hipotenusa é ' + ((Math.sqrt((Math.pow(b,2)))+((Math.pow(b,2))))));
@@ -84,7 +84,7 @@ function Q5() {
         console.log('você está sarad' + letra);
     }
     else if (imc<29.9) {
-        console.log('você está rechonchud' + letra);
+        console.log('você está rechonchudo' + letra);
     }
     else {
         console.log('você está obes' + letra);
