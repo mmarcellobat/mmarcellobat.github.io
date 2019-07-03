@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Matemática Bruta</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="formulaMF.js"></script>
+  <style>
+    .art {
+      border-bottom: 0px;
+    }
+  </style>
+</head>
+<body style="background-color: #EEECF4">
+
+    <nav class="navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+            </button>
+            <a class="navbar-brand" href="index.html">Matemática Bruta</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a class="active" href="index.html">Home</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle botaonav" data-toggle="dropdown" href="#">Geometria
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="geo_plana.html">Plana</a></li>
+                  <li><a href="#">Espacial</a></li>
+                </ul>
+              </li>
+              <li><a class="botaonav" href="#">Page 2</a></li> 
+              <li><a class="botaonav" href="#">Page 3</a></li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+<div class="container text-center">    
+  <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10 text-left box"> 
+            
+          <div class="art col-sm-12 col-md">
+            <h1>Matemática Financeira</h1>
+              <div class="form">
+                <h2>Lucro</h2>
+                <img src="/img/lucro.png">
+                <table>
+                  <tr>
+                    <td>
+                        Ganhos:
+                    </td>
+                    <td>
+                        <input type="number" id="ganhos">
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                        Gastos:
+                    </td>
+                    <td>
+                        <input type="number" id="gastos">
+                    </td>
+                  </tr>
+                </table>
+                <p> <button type="button" onclick="lucro()">Calcular</button></p>
+                <p id="F0"></p>
+                <br>
+                </div>
+
+              <div class="form">
+                
+                <h2>Juros Simples</h2>
+                <img src="/img/juro_simp.png">
+                <table>
+                    <tr>
+                      <td>Valor Inicial:</td>
+                      <td><input type="number" id="capital"></td>
+                    </tr>
+                    <tr>
+                      <td>Taxa de Juros:</td>
+                      <td><input type="number" id="juros"></td>
+                    </tr>
+                    <tr>
+                      <td>Meses:</td>
+                      <td><input type="number" id="tempo"></td>
+                    </tr>
+                  </table>
+                <p> <button type="button" onclick="juroSimp()">Calcular</button></p>
+                <p id="F1"></p>
+              </div>
+
+              <div class="form">
+                  <h2>Juros Composto</h2>
+                  <img src="/img/juro_comp.png">
+                  <table>
+                    <tr>
+                      <td>Valor Inicial:</td>
+                      <td><input type="number" id="capital2"></td>
+                    </tr>
+                    <tr>
+                      <td>Taxa de Juros:</td>
+                      <td><input type="number" id="juros2"></td>
+                    </tr>
+                    <tr>
+                      <td>Meses:</td>
+                      <td><input type="number" id="tempo2"></td>
+                    </tr>
+                  </table>
+                  <p> <button type="button" onclick="juroComp()">Calcular</button></p>
+                  <p id="F2"></p>
+                </div>
+          </div>
+      
+
+        </div>
+        <div class="col-sm-1"></div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+
+    <div class="row">
+      <div id="rodape">
+        Site desenvolvido por Ádrian Marcello, Luigi Negrini e Marlon de Oliveira
+      </div>
+    </div>
+
+</footer>
+
+</body>
+</html>

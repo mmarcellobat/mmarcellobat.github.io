@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="formulaGP.js"></script>
+</head>
+<body style="background-color: #EEECF4">
+
+    <nav class="navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+            </button>
+            <a class="navbar-brand" href="index.html">Matemática Bruta</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a class="active" href="index.html">Home</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle botaonav" data-toggle="dropdown" href="#">Geometria
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="geo_plana.html">Plana</a></li>
+                  <li><a href="#">Espacial</a></li>
+                </ul>
+              </li>
+              <li><a class="botaonav" href="#">Page 2</a></li> 
+              <li><a class="botaonav" href="#">Page 3</a></li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+<div class="container text-center">    
+  <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10 text-left box"> 
+            
+          <div class="art">
+              <div class="form">
+            <h2>Área de um triângulo equilátero</h2>
+            <img src="/img/tri_eq.png">
+            <p> Lado: <input type="number" id="lado0"></p>
+            <br>
+            <p> <button type="button" onclick="ATriEq()">Calcular</button></p>
+            <p id="F0"></p>
+            <br>
+            <h2>Perímetro de um triângulo equilátero</h2>
+            <img src="/img/tri_eq.png">
+            <p> Lado: <input type="number" id="lado1"></p>
+            <br>
+            <p> <button type="button" onclick="PTriEq()">Calcular</button></p>
+            <p id="F1"></p>
+            </div>
+          </div>
+          
+          <div class="art">
+              
+        </div>
+
+        <div class="art">
+                
+        </div>
+
+        </div>
+        <div class="col-sm-1"></div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+
+    <div class="row">
+      <div id="rodape">
+        Site desenvolvido por Ádrian Marcello, Luigi Negrini e Marlon de Oliveira
+      </div>
+    </div>
+
+</footer>
+
+</body>
+</html>

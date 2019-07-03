@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="formulasGE.js"></script>
+  <style>
+    .art {
+      border-bottom: 0px;
+    }
+  </style>
+</head>
+<body style="background-color: #EEECF4">
+
+    <nav class="navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+            </button>
+            <a class="navbar-brand" href="index.html">Matemática Bruta</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a class="active" href="index.html">Home</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle botaonav" data-toggle="dropdown" href="#">Geometria
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="geo_plana.html">Plana</a></li>
+                  <li><a href="#">Espacial</a></li>
+                </ul>
+              </li>
+              <li><a class="botaonav" href="#">Page 2</a></li> 
+              <li><a class="botaonav" href="#">Page 3</a></li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+<div class="container text-center">    
+  <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10 text-left box"> 
+            
+          <div class="art col-sm-12 col-md">
+                
+                
+                    <h1>Geometria Espacial</h1>
+                        <h2> Área Lateral do Prisma Reto </h2>
+                            <img src="">
+                            <p> Numero de Lados: <input type="number" id="lados0"</p>
+                            <p> Face Lateral: <input type="number" id="faceLateral0"</p>
+                            <p> <button type="button" onclick="aLateralPrism()">Calcular</button></p>
+                            <p id="F0"> </p>
+                
+                        <h2> Área Total do Prisma Reto </h2>   
+                            <img src="">
+                            <p> Soma das Áreas das Faces Laterais: <input type="number" id="Somalateral0"</p>
+                            <p> Soma das Áreas das Bases: <input type="number" id="SomaAreaBase0"</p>
+                            <p> <button type="button" onclick="aTotalPrism()">Calcular</button></p>   
+                            <p id= "F1"> </p>  
+                        
+                        <h2> Área da Base do Prisma Triangular </h2>
+                            <img src="">
+                            <p> Base: <input type="number" id="BaseTrian0"</p>
+                            <p> Altura: <input type="number" id="Altura0"</p>
+                            <p> <button type="button" onclick="aPrismTrian()">Calcular</button></p>
+                            <p id= "F2"> </p>
+                
+                        <h2> Área do Prisma triangular </h2>
+                            <img src="">
+                            <p> Base do triangulo: <input type="number" id="basetriangular0"</p>
+                            <p> Altura do triângulo: <input type="number" id="alturatrian0"</p>
+                            <p> Altura do Prisma: <input type="number" id="alturaprism0"</p>
+                            <p> <button type="button" onclick="aPrismTrian()">Calcular</button></p>
+                            <p id= "F5"> </p>
+                            
+                        
+                        <h2> Área da Base do Prisma Paralelogramo</h2>
+                            <img src="">
+                            <p> Base: <input type="number" id="Baseparalelo0"</p>
+                            <p> Altura: <input type="number" id="Altura1"</p>   
+                            <p> <button type="button" onclick="aPrismParalelogramo()">Calcular</button></p>
+                            <p id = "F3"> </p>
+                        
+                        <h2> Área Lateral do Paralelogramo</h2>
+                        <img src="">
+                        <p> Numero de lados de uma Base: <input type="number" id="ladodebases0"</p>
+                        <p> Area do Paralelogramo: <input type="number" id="areaparalelogramo0"</p>
+                        <p> <button type="button" onclick="aLateralParalelogramo()">Calcular</button></p>
+                        <p id= "F4"> </p>
+                        
+                        <h2> Área do prisma cuja base é um paralelogramo</h2>
+                        <img src="">
+                        <p>Largura da base do Prisma: <input type="number" id="largurabase0"</p>
+                        <p>Comprimento da Base do Prisma: <input type="number" id="larguraprisma0"</p>
+                        <p>Comprimento da face lateral: <input type="number" id="comprimentolateral0"</p>
+                        <p> <button type="button" onclick="aPrismParalelogramo1()">Calcular</button></p>
+                        <p id= "F6"> </p>
+                
+                        <h2> Volume do Prisma Reto</h2>
+                        <img src="">
+                        <p>Área da base: <input type="number" id="areadabase0"</p>
+                        <p>Altura: <input type="number" id="alturaprism1"</p>
+                        <p> <button type="button" onclick="VolumPrism()">Calcular</button></p>
+                        <p id= "F7"> </p>
+                
+                        <h2> Área do Cubo</h2>
+                        <img src="">
+                        <p>Aresta: <input type="number" id="arestacubo0"</p>
+                        <p> <button type="button" onclick="Areadocubo()">Calcular</button></p>  
+                        <p id= "F8"> </p>
+                
+                        <h2> Área lateral do cubo</h2>
+                        <img src="">
+                        <p>Aresta: <input type="number" id="arestadocubo1"</p>
+                        <p> <button type="button" onclick="Arealateraldocubo()">Calcular</button></p>
+                        <p id= "F9"> </p>
+                
+                        <h2> Área da base do cubo</h2>
+                        <img src="">
+                        <p>Aresta: <input type="number" id="arestadocubo2"</p>
+                        <p> <button type="button" onclick="AreadaBasedoCubo()">Calcular</button></p>
+                        <p id= "F10"> </p>
+                
+                        <h2> Volume do Cubo</h2>
+                        <img src="">
+                        <p>Aresta: <input type="number" id="arestadocubo3"</p>
+                        <p> <button type="button" onclick="VolumeCubo()">Calcular</button></p>  
+                        <p id= "F11"> </p>
+                
+                        <h2> Área da Base do paralelepipedo</h2>
+                        <img src="">
+                        <p>Medida da Base: <input type="number" id="medidadabase0"</p>
+                        <p>Medida da Altura: <input type="number" id="medidadaaltura0"</p>
+                        <p> <button type="button" onclick="Areadabaseparalelepipedo()">Calcular</button></p>
+                        <p id= "F12"></p>    
+                
+                        <h2> Área Lateral do paralelepipedo</h2>
+                        <img src="">
+                        <p>Aresta a: <input type="number" id="arestaparalelepipedo0"</p>
+                        <p>Aresta b: <input type="number" id="arestaparalelepipedo1"</p>
+                        <p>Aresta c: <input type="number" id="arestaparalelepipedo2"</p>
+                        <p> <button type="button" onclick="Arealateralparalelepipedo()">Calcular</button></p>
+                        <p id= "F13"></p>
+                
+                        <h2> Área Total do paralelepipedo</h2>
+                        <img src="">
+                        <p>Aresta a: <input type="number" id="arestaparalelepipedo3"</p>
+                        <p>Aresta b: <input type="number" id="arestaparalelepipedo4"</p>
+                        <p>Aresta c: <input type="number" id="arestaparalelepipedo5"</p>
+                        <p> <button type="button" onclick="AreaTotalparalelepipedo()">Calcular</button></p>
+                        <p id ="F14"></p>
+                
+                        <h2> Volume do Paralelepipedo</h2>
+                        <img src="">
+                        <p>Aresta a: <input type="number" id="arestaparalelepipedo6"</p>
+                        <p>Aresta b: <input type="number" id="arestaparalelepipedo7"</p>
+                        <p>Aresta c: <input type="number" id="arestaparalelepipedo8"</p>
+                        <p> <button type="button" onclick="Volumeparalelepipedo()">Calcular</button></p>
+                        <p id ="F15"></p>
+                
+                        <h2> Área da Pirâmide</h2>
+                        <img src="">
+                        <p> Área lateral: <input type="number" id="arealateralpiramide0"</p>
+                        <p> Área da base: <input type="number" id="areadabasepiramide0"</p>
+                        <p> <Button type="button" onclick="Areadapiramide()">Calcular</Button></p>
+                        <p id ="F16"></p>
+                
+                        <h2> Volume da Pirâmide</h2>
+                        <img src="">
+                        <p> Área da base: <input type="number" id="areadabasepiramide1"</p>
+                        <p> Altura: <input type="number" id="alturapiramide0"</p>
+                        <p> <button type="button" onclick="Volumedapiramide()">Calcular</button></p> 
+                        <p id="F17"></p> 
+                
+                        <h2> Área da base do Cone</h2>
+                        <img src="">
+                        <p> Raio: <input type="number" id="raiodocone0"</p>
+                        <p> <button type="button" onclick="Areadocone()">Calcular</button></p>
+                        <p id ="F18"></p>
+                
+                        <h2> Área Lateral do Cone</h2>
+                        <p> Raio: <input type="number" id="raiodocone1"</p>
+                        <p> Geratriz: <input type="number" id="geratrizcone0"</p>
+                        <p> <button type="button" onclick="Arealateralcone()">Calcular</button></p>
+                        <p id ="F19"></p>
+                
+                        <h2> Área total do cone</h2>
+                        <p> Raio: <input type="number" id="raiodocone2"</p>
+                        <p> Geratriz: <input type="number" id="geratrizcone1"</p>
+                        <p> <button type="button" onclick="Areatotalcone()">Calcular</button></p>
+                        <p id ="F20"></p>
+                
+                        <h2> Volume do Cone</h2>
+                        <p> Raio: <input type="number" id="raiodocone3"</p>
+                        <p> Altura: <input type="number" id="alturadocone0"</p>
+                        <p> <button type="button" onclick="Volumedocone()">Calcular</button></p>
+                        <p id ="F21"></p>
+                
+                        <h2> Área do Cilindro</h2>
+                        <p> Raio: <input type="number" id="raiocilindro0"</p>
+                        <p> <button type="button" onclick="Areadabasecilindro()">Calcular</button></p>  
+                        <p id ="F22"></p>
+                
+                        <h2> Área Lateral do Cilindro</h2>
+                        <p> Raio: <input type="number" id="raiocilindro1"</p>
+                        <p> Altura: <input type="number" id="alturacilindro0"</p>
+                        <p> <button type="button" onclick="Arealateralcilindro()">Calcular</button></p>
+                        <p id= "F23"></p>
+                
+                        <h2> Area Total do Cilindro</h2>
+                        <p> Área da Base: <input type="number" id="areadabasecilindro0"</p>
+                        <p> Área Lateral: <input type="number" id="arealateralcilindro0"</p>
+                        <p> <button type="button" onclick="Areatotalcilindro()">Calcular</button></p>
+                        <p id= "F24"></p>
+                
+                        <h2> Volume do Cilindro</h2>
+                        <p> Área da base: <input type="number" id="areadabasecilindro1"</p>
+                        <p> Altura: <input type="number" id="alturacilindro1"</p>
+                        <p> <button type="button" onclick="Volumecilindro()">Calcular</button></p>
+                        <p id= "F25"></p>
+                
+                        <h2> Área da Esfera</h2>
+                        <p> Raio: <input type="number" id="raioesfera0"</p>
+                        <p> <button type="button" onclick="Areadaesfera()">Calcular</button></p>
+                        <p id= "F26"></p>
+                
+                        <h2> Volume da Esfera</h2>
+                        <p> Raio: <input type="number" id="raioesfera1"</p>
+                        <p> <button type="button" onclick="Volumeesfera()">Calcular</button></p>
+                        <p id= "F27"></p>
+      
+
+        </div>
+        <div class="col-sm-1"></div>
+        </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+
+    <div class="row">
+      <div id="rodape">
+        Site desenvolvido por Ádrian Marcello, Luigi Negrini e Marlon de Oliveira
+      </div>
+    </div>
+
+</footer>
+
+</body>
+</html>
