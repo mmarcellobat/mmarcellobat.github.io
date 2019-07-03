@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <title>Matemática Bruta</title>
   <meta charset="utf-8">
@@ -16,6 +17,7 @@
     }
   </style>
 </head>
+
 <body style="background-color: #EEECF4">
 
   <nav class="navbar">
@@ -24,185 +26,186 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">Matemática Bruta</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li><a class="botaonav" href="index.html">Home</a></li>
-          <li><a class="botaonav" href="geo_esp.html">Geometria Espacial</a></li> 
-          <li><a class="botaonav" href="geo_plana.html">Geometria Plana</a></li> 
-          <li><a class="botaonav" href="alg_geral.html">Álgebra Geral</a></li>
+          <li><a class="botaonav" href="geo_esp.html">Geometria Espacial</a></li>
+          <li><a class="botaonav" href="geo_plana.html">Geometria Plana</a></li>
+          <li><a class="active" href="alg_geral.html">Álgebra Geral</a></li>
+          <li><a class="botaonav" href="mat_fin.html">Matemática Financeira</a></li>
 
         </ul>
       </div>
     </div>
   </nav>
-  
-<div class="container text-center">    
-  <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-10 text-left box"> 
-            
-          <div class="art col-sm-12 col-md">
-            <h1>Álgebra Geral</h1>
-            
 
-              <div class="form">
-                
-                <h2>N-ésimo termo da PA</h2>
-                <table>
-                    <tr>
-                      <td>Primeiro termo:</td>
-                      <td><input type="number" id="prit"></td>
-                    </tr>
-                    <tr>
-                      <td>índice do N-ésimo termo (n):</td>
-                      <td><input type="number" id="indn"></td>
-                    </tr>
-                    <tr>
-                      <td>Razão:</td>
-                      <td><input type="number" id="razao"></td>
-                    </tr>
-                  </table>
-                <p> <button type="button" onclick="eneTpa()">Calcular</button></p>
-                <p id="C1"></p>
-              </div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 text-left box">
 
-              <div class="form">
-                  <h2>Soma dos termos da PA</h2>
-                  <table>
-                    <tr>
-                      <td>Termo 1:</td>
-                      <td><input type="number" id="prit2"></td>
-                    </tr>
-                    <tr>
-                      <td>Termo último:</td>
-                      <td><input type="number" id="ultt"></td>
-                    </tr>
-                    <tr>
-                        <td>Número de termos:</td>
-                        <td><input type="number" id="nt"></td>
-                      </tr>
-                  </table>
-                  <p> <button type="button" onclick="somaPA()">Calcular</button></p>
-                  <p id="C2"></p>
-              </div>
-
-              <div class="form">
-                  <h2>Razão da PA</h2>
-                  <table>
-                    <tr>
-                      <td>Termo n:</td>
-                      <td><input type="number" id="tn"></td>
-                    </tr>
-                    <tr>
-                      <td>Termo 1:</td>
-                      <td><input type="number" id="t1"></td>
-                    </tr>
-                    <tr>
-                        <td>índice do termo n:</td>
-                        <td><input type="number" id="indn1"></td>
-                      </tr>
-                  </table>
-                  <p> <button type="button" onclick="razaoPA()">Calcular</button></p>
-                  <p id="C3"></p>
-              </div>
-
-              <div class="form">
-                
-                  <h2>N-ésimo termo da PG</h2>
-                  <table>
-                      <tr>
-                        <td>Primeiro termo:</td>
-                        <td><input type="number" id="pritpg"></td>
-                      </tr>
-                      <tr>
-                        <td>índice do N-ésimo termo (n):</td>
-                        <td><input type="number" id="indnpg"></td>
-                      </tr>
-                      <tr>
-                        <td>Razão:</td>
-                        <td><input type="number" id="razaopg"></td>
-                      </tr>
-                    </table>
-                  <p> <button type="button" onclick="eneTpg()">Calcular</button></p>
-                  <p id="C4"></p>
-                </div>
-  
-                <div class="form">
-                    <h2>Soma dos termos da PG</h2>
-                    <table>
-                      <tr>
-                        <td>Termo 1:</td>
-                        <td><input type="number" id="prit2pg"></td>
-                      </tr>
-                      <tr>
-                        <td>Razão:</td>
-                        <td><input type="number" id="qpg"></td>
-                      </tr>
-                      <tr>
-                          <td>Número de termos:</td>
-                          <td><input type="number" id="ntpg"></td>
-                        </tr>
-                    </table>
-                    <p> <button type="button" onclick="somaPG()">Calcular</button></p>
-                    <p id="C5"></p>
-                </div>
-  
-                <div class="form">
-                    <h2>Razão da PG</h2>
-                    <table>
-                      <tr>
-                        <td>Termo n:</td>
-                        <td><input type="number" id="tnpg"></td>
-                      </tr>
-                      <tr>
-                        <td>Termo n+1:</td>
-                        <td><input type="number" id="t1pg"></td>
-                      </tr>
-                    </table>
-                    <p> <button type="button" onclick="razaoPG()">Calcular</button></p>
-                    <p id="C6"></p>
-                </div>
-                <div class="form">
-                    <h2>Fatorial de um número</h2>
-                    <img src="img/fat.png">
-                    <table>
-                      <tr>
-                        <td>Número:</td>
-                        <td><input type="number" id="nfat"></td>
-                      </tr>
-                    </table>
-                    <p> <button type="button" onclick="fatorial()">Calcular</button></p>
-                    <p id="C7"></p>
-                </div><br><br>
-                <div class="form">
-                    <h2>Número da sequência fibonacci</h2>
-                    <img src="img/fibo.png">
-                    <table>
-                      <tr>
-                        <td>Número:</td>
-                        <td><input type="number" id="nfib"></td>
-                      </tr>
-                    </table>
-                    <p> <button type="button" onclick="fibonacci()">Calcular</button></p>
-                    <p id="C8"></p>
-                </div>
+        <div class="art col-sm-12 col-md">
+          <h1>Álgebra Geral</h1>
 
 
-              
-              
+          <div class="form">
+
+            <h2>N-ésimo termo da PA</h2>
+
+
+            <p>Primeiro termo:</p>
+            <p><input type="number" id="prit"></p>
+
+
+            <p>índice do N-ésimo termo (n):
+              <p><input type="number" id="indn"></p>
+
+
+              <p>Razão:</p>
+              <p><input type="number" id="razao"></p>
+
+
+              <p> <button type="button" onclick="eneTpa()">Calcular</button></p>
+              <p id="C1"></p>
           </div>
-      
+
+          <div class="form">
+            <h2>Soma dos termos da PA</h2>
+
+
+            <p>Termo 1:</p>
+            <p><input type="number" id="prit2"></p>
+
+
+            <p>Termo último:</p>
+            <p><input type="number" id="ultt"></p>
+
+
+            <p>Número de termos:</p>
+            <p><input type="number" id="nt"></p>
+
+
+            <p> <button type="button" onclick="somaPA()">Calcular</button></p>
+            <p id="C2"></p>
+          </div>
+
+          <div class="form">
+            <h2>Razão da PA</h2>
+
+
+            <p>Termo n:</p>
+            <p><input type="number" id="tn"></p>
+
+
+            <p>Termo 1:</p>
+            <p><input type="number" id="t1"></p>
+
+
+            <p>índice do termo n:</p>
+            <p><input type="number" id="indn1"></p>
+
+
+            <p> <button type="button" onclick="razaoPA()">Calcular</button></p>
+            <p id="C3"></p>
+          </div>
+
+          <div class="form">
+
+            <h2>N-ésimo termo da PG</h2>
+
+
+            <p>Primeiro termo:</p>
+            <p><input type="number" id="pritpg"></p>
+
+
+            <p>índice do N-ésimo termo (n):</p>
+            <p><input type="number" id="indnpg"></p>
+
+
+            <p>Razão:</p>
+            <p><input type="number" id="razaopg"></p>
+
+
+            <p> <button type="button" onclick="eneTpg()">Calcular</button></p>
+            <p id="C4"></p>
+          </div>
+
+          <div class="form">
+            <h2>Soma dos termos da PG</h2>
+
+
+            <p>Termo 1:</p>
+            <p><input type="number" id="prit2pg"></p>
+
+
+            <p>Razão:</p>
+            <p><input type="number" id="qpg"></p>
+
+
+            <p>Número de termos:</p>
+            <p><input type="number" id="ntpg"></p>
+
+
+            <p> <button type="button" onclick="somaPG()">Calcular</button></p>
+            <p id="C5"></p>
+          </div>
+
+          <div class="form">
+            <h2>Razão da PG</h2>
+
+
+            <p>Termo n:</p>
+            <p><input type="number" id="tnpg"></p>
+
+
+            <p>Termo n+1:</p>
+            <p><input type="number" id="t1pg"></p>
+
+
+            <p> <button type="button" onclick="razaoPG()">Calcular</button></p>
+            <p id="C6"></p>
+          </div>
+          <div class="form">
+            <h2>Fatorial de um número</h2>
+            <img src="img/fat.png">
+
+
+            <p>Número:</p>
+            <p><input type="number" id="nfat"></p>
+
+
+            <p> <button type="button" onclick="fatorial()">Calcular</button></p>
+            <p id="C7"></p>
+          </div><br><br>
+          <div class="form">
+            <h2>Número da sequência fibonacci</h2>
+            <img src="img/fibo.png">
+
+
+            <p>Número:</p>
+            <p><input type="number" id="nfib"></p>
+
+
+            <p> <button type="button" onclick="fibonacci()">Calcular</button></p>
+            <p id="C8"></p>
+          </div>
+
+
+
 
         </div>
-        <div class="col-sm-1"></div>
-  </div>
-</div>
 
-<footer class="container-fluid text-center">
+
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
 
     <div class="row">
       <div id="rodape">
@@ -210,7 +213,8 @@
       </div>
     </div>
 
-</footer>
+  </footer>
 
 </body>
+
 </html>
