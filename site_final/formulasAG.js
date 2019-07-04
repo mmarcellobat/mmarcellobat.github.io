@@ -82,6 +82,22 @@ function fibonacci() {
     document.getElementById('C8').innerHTML = resp;
 }
 
+function pit() {
+
+    var a_str = document.getElementById('hipotenusa').value;
+    var b_str = document.getElementById('cateto1').value;
+    var c_str = document.getElementById('cateto2').value;
+    if (a_str && b_str){
+
+        document.getElementById('C9').innerHTML = ('Cateto =' + Math.sqrt(+ Math.pow(a_str,2) - + Math.pow(b_str,2)))
+    } else if (a_str && c_str) {
+
+        document.getElementById('C9').innerHTML = ('Cateto =' + Math.sqrt(+ Math.pow(a_str,2) - + Math.pow(c_str,2)));
+
+    } else if (b_str && c_str) {
+        document.getElementById('C9').innerHTML = ('Hipotenusa =' + Math.sqrt(+ Math.pow(b_str,2) + + Math.pow(c_str,2)))
+    }
+}
    
   
     

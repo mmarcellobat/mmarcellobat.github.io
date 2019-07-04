@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <title>Matemática Bruta</title>
   <meta charset="utf-8">
@@ -16,6 +17,7 @@
     }
   </style>
 </head>
+
 <body style="background-color: #EEECF4">
 
   <nav class="navbar">
@@ -24,15 +26,15 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">Matemática Bruta</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li><a class="botaonav" href="index.html">Home</a></li>
-          <li><a class="botaonav" href="geo_esp.html">Geometria Espacial</a></li> 
-          <li><a class="botaonav" href="geo_plana.html">Geometria Plana</a></li> 
+          <li><a class="botaonav" href="geo_esp.html">Geometria Espacial</a></li>
+          <li><a class="botaonav" href="geo_plana.html">Geometria Plana</a></li>
           <li><a class="botaonav" href="alg_geral.html">Álgebra Geral</a></li>
           <li><a class="active" href="mat_fin.html">Matemática Financeira</a></li>
 
@@ -40,92 +42,93 @@
       </div>
     </div>
   </nav>
-  
-<div class="container text-center">    
-  <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-10 text-left box"> 
-            
-          <div class="art col-sm-12 col-md">
-            <h1>Matemática Financeira</h1>
-              <div class="form">
-                <h2>Lucro</h2>
-                <img src="/img/lucro.png">
-                <table>
-                  <tr>
-                    <td>
-                        Ganhos:
-                    </td>
-                    <td>
-                        <input type="number" id="ganhos">
-                    </td>
-                  </tr>
 
-                  <tr>
-                    <td>
-                        Gastos:
-                    </td>
-                    <td>
-                        <input type="number" id="gastos">
-                    </td>
-                  </tr>
-                </table>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 text-left box">
+
+        <div class="art col-sm-12 col-md">
+          <h1>Matemática Financeira</h1>
+          <div class="form">
+            <h2>Lucro</h2>
+            <p><img src="img/lucro.png">
+              <p>
+
+
+
+                <p>Ganhos:</p>
+
+
+                <p> <input type="number" id="ganhos"></p>
+
+
+
+
+
+                <p> Gastos:</p>
+
+
+                <p><input type="number" id="gastos"></p>
+
+
+
                 <p> <button type="button" onclick="lucro()">Calcular</button></p>
                 <p id="F0"></p>
                 <br>
-                </div>
-
-              <div class="form">
-                
-                <h2>Juros Simples</h2>
-                <img src="/img/juro_simp.png">
-                <table>
-                    <tr>
-                      <td>Valor Inicial:</td>
-                      <td><input type="number" id="capital"></td>
-                    </tr>
-                    <tr>
-                      <td>Taxa de Juros:</td>
-                      <td><input type="number" id="juros"></td>
-                    </tr>
-                    <tr>
-                      <td>Meses:</td>
-                      <td><input type="number" id="tempo"></td>
-                    </tr>
-                  </table>
-                <p> <button type="button" onclick="juroSimp()">Calcular</button></p>
-                <p id="F1"></p>
-              </div>
-
-              <div class="form">
-                  <h2>Juros Composto</h2>
-                  <img src="/img/juro_comp.png">
-                  <table>
-                    <tr>
-                      <td>Valor Inicial:</td>
-                      <td><input type="number" id="capital2"></td>
-                    </tr>
-                    <tr>
-                      <td>Taxa de Juros:</td>
-                      <td><input type="number" id="juros2"></td>
-                    </tr>
-                    <tr>
-                      <td>Meses:</td>
-                      <td><input type="number" id="tempo2"></td>
-                    </tr>
-                  </table>
-                  <p> <button type="button" onclick="juroComp()">Calcular</button></p>
-                  <p id="F2"></p>
-                </div>
           </div>
-      
 
+          <div class="form">
+
+            <h2>Juros Simples</h2>
+            <img src="img/juro_simp.png">
+
+
+            <p>Valor Inicial:</p>
+            <p><input type="number" id="capital"></p>
+
+
+            <p>Taxa de Juros:</p>
+            <p><input type="number" id="juros"></p>
+
+
+            <p>Meses:</p>
+            <p><input type="number" id="tempo"></p>
+
+
+            <p> <button type="button" onclick="juroSimp()">Calcular</button></p>
+            <p id="F1"></p>
+          </div>
+
+          <div class="form">
+            <h2>Juros Composto</h2>
+            <img src="img/juro_comp.png">
+
+
+            <p>Valor Inicial:</p>
+            <p><input type="number" id="capital2"></p>
+
+
+            <p>Taxa de Juros:</p>
+            <p><input type="number" id="juros2"></p>
+
+
+            <p>Meses:</p>
+            <p><input type="number" id="tempo2"></p>
+
+
+            <p> <button type="button" onclick="juroComp()">Calcular</button></p>
+            <p id="F2"></p>
+          </div>
         </div>
-        <div class="col-sm-1"></div>
-  </div>
-</div>
 
-<footer class="container-fluid text-center">
+
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
 
     <div class="row">
       <div id="rodape">
@@ -133,7 +136,8 @@
       </div>
     </div>
 
-</footer>
+  </footer>
 
 </body>
+
 </html>
